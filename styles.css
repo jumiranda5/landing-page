@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper {
+    width: 1100px;
+    border: 1px solid salmon;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wrapper {
+    height: 80px;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header ul {
+    border: 1px solid salmon;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid salmon;
+    margin-left: 24px;
+    padding: 16px 0;
+}
+
+/* SECTION 1 */
+
+
+.section1 .wrapper {
+    margin: 80px auto;
+}
+
+.section1 .wrapper > div,
+.section1 .wrapper > img {
+    width: 50%;
+    border: 1px solid salmon;
+}
+
+.section1 img {
+    background-color: gray;
+}
+
+/* SECTION 2 */
+
+.section2 .flex {
+    justify-content: center;
+}
+
+.section2 .wrapper {
+    padding: 60px 0 80px;
+}
+
+.section2 h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.section2 .wrapper > div {
+    width: 200px;
+    border: 1px solid salmon;
+}
+
+
+/* SECTION 3 */
+
+.section3 .wrapper {
+    width: 800px;
+    margin: 80px auto;
+}
+
+/* SECTION 4 */
+
+.section4 .flex {
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 80px auto;
+}
+
+.section4 .flex > div{
+    flex-grow: 1;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 24px;
+    border: 1px solid salmon;
+}
