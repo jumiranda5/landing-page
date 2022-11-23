@@ -1,114 +1,258 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Inter';
-    margin: 0;
+    font-family: 'Roboto';
 }
 
-.flex {
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+}
+
+/*----------------------------------
+            POSITIONING
+------------------------------------*/
+
+/* Flex */
+
+.flex-container {
     display: flex;
     flex-flow: row wrap;
-}
-
-.wrapper {
     width: 1100px;
-    border: 1px solid salmon;
     margin: 0 auto;
 }
 
-/* HEADER */
-
-header .flex {
+.flex-container.header,
+.section4 .flex-container {
     justify-content: space-between;
+}
+
+.flex-container.header,
+.flex-container.hero,
+.section4 .flex-container {
     align-items: center;
 }
 
-header .wrapper {
+.section2 .flex-container {
+    justify-content: center;
+}
+
+.section3 .flex-container {
+    flex-flow: column wrap;
+}
+
+/* Section 1 */
+
+header {
     height: 80px;
-}
-
-header h1 {
-    font-size: 22px;
-}
-
-header ul {
-    border: 1px solid salmon;
-    margin: 0;
-    padding: 0;
 }
 
 header ul li {
     display: inline-block;
     list-style: none;
-    border: 1px solid salmon;
     margin-left: 24px;
     padding: 16px 0;
 }
 
-/* SECTION 1 */
-
-
-.section1 .wrapper {
-    margin: 80px auto;
+.hero {
+    padding: 100px 0 140px;
 }
 
-.section1 .wrapper > div,
-.section1 .wrapper > img {
+.hero > div {
+    flex: 1;
+    margin-right: 80px;
+}
+
+.hero > img {
     width: 50%;
-    border: 1px solid salmon;
 }
 
-.section1 img {
-    background-color: gray;
+.hero p {
+    margin-top: 6px;
 }
 
-/* SECTION 2 */
-
-.section2 .flex {
-    justify-content: center;
+.hero button {
+    margin-top: 14px;
 }
 
-.section2 .wrapper {
-    padding: 60px 0 80px;
+/* Section 2 */
+
+.section2 .flex-container {
+    padding: 0 0 100px;
 }
 
 .section2 h2 {
     text-align: center;
     width: 100%;
+    margin: 60px 0;
 }
 
-.section2 .wrapper > div {
-    width: 200px;
-    border: 1px solid salmon;
+.section2 .flex-container > div {
+    width: 180px;
+    margin: 0 24px;
 }
 
+.section2 img {
+    width: 180px;
+    height: 180px;
+}
 
-/* SECTION 3 */
+.section2 p {
+    margin-top: 8px;
+}
 
-.section3 .wrapper {
+/* Section 3 */
+
+.section3 .flex-container {
     width: 800px;
-    margin: 80px auto;
+    margin: 0 auto;
+    padding: 120px 0;
 }
 
-/* SECTION 4 */
-
-.section4 .flex {
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    margin: 80px auto;
+.quote-author {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: end;
+    margin-top: 8px;
 }
 
-.section4 .flex > div{
-    flex-grow: 1;
+/* Section 4 */
+
+.section4 .flex-container {
+    width: 1000px;
+    margin: 120px auto;
+    padding: 50px 100px;
+    border-radius: 8px;
 }
 
-/* FOOTER */
+.section4 p {
+    margin-top: 2px;
+}
+
+/* Footer */
 
 footer {
     text-align: center;
-    padding: 24px;
-    border: 1px solid salmon;
+    padding: 32px;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+
+/*----------------------------------
+          COLORS AND FONTS
+------------------------------------*/
+
+/* Background */
+header,
+footer,
+.section1 {
+    background-color: #1F2937;
+}
+
+.section1 button,
+.section4 .flex-container {
+    background: #3882F6;
+}
+
+.section3 {
+    background-color: #E5E7EB;
+}
+
+/* Borders */
+
+.section2 img {
+    border: 4px solid #3882F6;
+}
+
+.section2 img,
+.section4 .flex-container {
+    border-radius: 8px;
+}
+
+.section4 button {
+    border: 2px solid #F9FAF8;
+    background: none;
+}
+
+/* Fonts */
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #F9FAF8;
+}
+
+header ul li,
+p,
+footer {
+    font-size: 18px;
+}
+
+.logo,
+.quote-author,
+.section4 h3 {
+    font-size: 24px;  
+}
+
+.quote,
+.section2 h2 {
+    font-size: 36px;  
+}
+
+.hero-title {
+    font-size: 48px;    
+}
+
+footer,
+button,
+.logo,
+.hero-title,
+.section4 h3,
+.section4 p {
+    color: #F9FAF8;
+}
+
+header ul li,
+.section1 p {
+    color: #E5E7EB;
+}
+
+.section2 h2,
+.quote,
+.quote-author {
+    color: #1F2937;
+}
+
+.section2 h2 {
+    font-weight: 900;
+}
+
+.section2 p {
+    font-weight: 500;
+    color: #1F293790;
+    text-align: center;
+}
+
+.quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-author {
+    font-weight: 700;
+    text-align: end;
+}
+
+/* Images */
+
+img {
+    object-fit: cover;
 }
