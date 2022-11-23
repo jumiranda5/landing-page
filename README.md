@@ -1,6 +1,10 @@
-# TODO
+# Landing Page
 
-## Images:
+#### Description:
+
+Basic CSS exercise from [The Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page).
+
+#### Images:
 
 Image by <a href="https://pixabay.com/users/0fjd125gk87-51581/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1341881">0fjd125gk87</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1341881">Pixabay</a>
 
