@@ -3,6 +3,7 @@
 #### Description:
 
 Basic CSS exercise from [The Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page).
+I've decided not to include any custom content because I wanted to see how close to the image 01.png I would get.
 
 #### Images:
 
